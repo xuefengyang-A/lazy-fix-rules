@@ -1,0 +1,1431 @@
+{
+  "passed": true,
+  "kind": "offline_output_rule_model",
+  "advertising_enabled": true,
+  "cases": [
+    {
+      "name": "direct:moutai519.com.cn",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "moutai519.com.cn"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:app.moutai519.com.cn",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "app.moutai519.com.cn"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:huya.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "huya.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:img.huya.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "img.huya.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:msstatic.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "msstatic.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:pvp.wanmei.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "pvp.wanmei.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:csgo.5eplay.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "csgo.5eplay.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:val.qq.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "val.qq.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:localhost",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "localhost"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:apple.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "apple.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:wechatpay.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "wechatpay.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct:www.bilibili.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "www.bilibili.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy:youtube.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "youtube.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy:netflix.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "netflix.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy:store.steampowered.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "store.steampowered.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy:google.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "google.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy:example.invalid",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "example.invalid"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy:github.com",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "github.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "advertising:ad.12306.cn",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "ad.12306.cn"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "actual": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "private-ip:127.0.0.1",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "ip": "127.0.0.1"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "private-ip:10.8.0.1",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "ip": "10.8.0.1"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "private-ip:172.16.5.3",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "ip": "172.16.5.3"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "private-ip:192.168.1.9",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "ip": "192.168.1.9"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "private-ip:::1",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "ip": "::1"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "private-ip:fc00::1234",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "ip": "fc00::1234"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "domain-before-cn-ip:google",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "google.com",
+        "ip": "223.5.5.5",
+        "country": "CN"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "domain-before-us-ip:moutai",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "moutai519.com.cn",
+        "ip": "8.8.8.8",
+        "country": "US"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "advertising-before-cn-ip",
+      "request": {
+        "network": "tcp",
+        "port": 443,
+        "host": "ad.12306.cn",
+        "ip": "223.5.5.5",
+        "country": "CN"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "actual": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy-udp443",
+      "request": {
+        "network": "udp",
+        "port": 443,
+        "host": "youtube.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "actual": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "fallback-proxy-udp443",
+      "request": {
+        "network": "udp",
+        "port": 443,
+        "host": "example.invalid"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "actual": {
+        "mihomo": "REJECT",
+        "shadowrocket": "REJECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "direct-udp443",
+      "request": {
+        "network": "udp",
+        "port": 443,
+        "host": "huya.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT",
+        "shadowrocket": "DIRECT"
+      },
+      "passed": true
+    },
+    {
+      "name": "proxy-udp27015",
+      "request": {
+        "network": "udp",
+        "port": 27015,
+        "host": "youtube.com"
+      },
+      "only_windows": false,
+      "expected": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "actual": {
+        "mihomo": "PROXY",
+        "shadowrocket": "PROXY"
+      },
+      "passed": true
+    },
+    {
+      "name": "windows-process:cs2.exe",
+      "request": {
+        "network": "udp",
+        "port": 27015,
+        "host": "game.example.invalid",
+        "process": "cs2.exe"
+      },
+      "only_windows": true,
+      "expected": {
+        "mihomo": "DIRECT"
+      },
+      "actual": {
+        "mihomo": "DIRECT"
+      },
+      "passed": true
+    }
+  ],
+  "rule_counts": {
+    "shadowrocket": 100645,
+    "mihomo": 100516
+  },
+  "ignored_shadowrocket_types": [
+    "USER-AGENT",
+    "URL-REGEX"
+  ],
+  "limits": [
+    "Offline output parsing and selected rule fixtures only; neither client was started and no test network traffic was sent.",
+    "No actual DNS, GeoIP or ASN lookup: IP/country metadata in conflict fixtures is supplied explicitly; literal IP hosts mappings are read from each output.",
+    "Shadowrocket is modeled as domain rules before IP/database rules; its runtime compiler and DNS-error fallback are not exercised.",
+    "Shadowrocket USER-AGENT and URL-REGEX rules are ignored because these fixtures supply neither User-Agent nor request URL.",
+    "Shadowrocket block-quic is modeled as UDP destination port 443; this does not verify client protocol detection or QUIC on other ports.",
+    "TUN routing, system proxy bypasses, DNS/IPv6 behavior, node reachability, HTTPS rewrites and actual app/game login or payment are not tested.",
+    "Configured .exe process fixtures are Windows/Mihomo only; they do not assert process matching in Shadowrocket.",
+    "Fixture expectations honor explicitly supplied local exceptions and process selections; the advertising fixture can use a current, non-exempt source domain.",
+    "Mihomo syntax validation with the installed core is a separate check; this module is not a complete client implementation.",
+    "Fixtures test routing-policy selection; PROXY is an unbound REJECT placeholder until a private local merge supplies the node."
+  ],
+  "mihomo": {
+    "performed": false,
+    "passed": null,
+    "reason": "MIHOMO_BIN was not supplied; independent output parsing and routing fixtures only. No core syntax check was performed."
+  },
+  "batch": "20261114T164438Z-fa5c36",
+  "shadowrocket_extension_alias_identical": true,
+  "shadowrocket_non_rule_sections_preserved": true,
+  "windows_only_processes": [
+    "cs2.exe"
+  ],
+  "unsupported_mihomo_rules": [
+    {
+      "type": "USER-AGENT",
+      "value": "*YouTubeMusic*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*com.google.ios.youtubemusic*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*youtube*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "YouTube*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "YouTubeMusic*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.google.ios.youtube*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.google.ios.youtubemusic*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Argo*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Disney+*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Disney/Disney.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "HBO%20NOW*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/HBO/HBO.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "HBOMAX*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/HBO/HBO.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Spotify*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Spotify/Spotify.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "PayPal*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "InstantVideo.US*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Amazon/Amazon.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Prime%20Video*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Amazon/Amazon.list"
+    },
+    {
+      "type": "URL-REGEX",
+      "value": "^https?:\\/\\/www\\.amazon\\.com\\/(Amazon-Video|gp\\/video)\\/",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Amazon/Amazon.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Microsoft*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "OneDrive*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "OneDriveiOSApp*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*com.google.Drive*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Google.Drive*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*FindMyiPhone?",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*Music?",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*WeatherFoundation*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*com.apple.Maps?",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*com.apple.mobileme.fmip1",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "FMDClient*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "FMFD*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "FindMyFriends*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "FindMyiPhone*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Maps*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Wallet*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.apple.Maps",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.apple.appstored*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "fmflocatord*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "geod*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "locationd*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "passd*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Music*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "AppleNews*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "AppleTV*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.apple.news*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.apple.trustd*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.apple.tv*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*bili*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/BiliBili/BiliBili.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Bilibili*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/BiliBili/BiliBili.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "bili*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/BiliBili/BiliBili.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "bili-inter*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/BiliBili/BiliBili.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/NetEaseMusic/NetEaseMusic.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "NeteaseMusic*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/NetEaseMusic/NetEaseMusic.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "MicroMessenger*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "WeChat*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "TikTok*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "AbemaTV*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "All4*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Anime*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Argo*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "BBCiPlayer*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "DAZN*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Deezer*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Disney+*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "FOX%20NOW*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "HBO%20GO%20PROD%20HKG*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "HBO%20NOW*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "HWTVMobile*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "ITV_Player*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "InstantVideo.US*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "JOOX*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "KKTV*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "LINE%20TV*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "My5*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Niconico*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "PBS*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Pandora*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Prime%20Video*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "SoundCloud*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Spotify*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "TIDAL*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "TaiwanGood*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "TikTok*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "TwDramas",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Viu*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "ViuTV*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "WeMusic*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "YouTube*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "YouTubeMusic*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.google.ios.youtube*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.google.ios.youtubemusic*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.kktv.ios.kktv*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "encoreTVB*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "mytv*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Duolingo*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "OneDrive*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "PayPal*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Roam*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "WhatsApp*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "battleroyale*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "com.apple.trustd*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "hearthstone*",
+      "policy": "PROXY",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E4%BA%AC%E4%B8%9C%E5%88%B0%E5%AE%B6*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E4%BC%98%E9%85%B7*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E5%8D%B3%E5%88%BB*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "*Vainglory*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "AdBlock*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Best%20Trace*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "MegaWerewolf*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "MicroMessenger%20Client",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "MicroMessenger*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "MicroMessengerClient*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Microsoft*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "Moke*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "NeteaseMusic*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "QQ*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "RemotePlay*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "TIM*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "TeamViewer*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "WeChat*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "WebTorrent*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "YYeTs*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "arrowio*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "balls*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "cmb*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "cmblife*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "eusoft_ting_en_iphone",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "hearthstone*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "hide*",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    },
+    {
+      "type": "USER-AGENT",
+      "value": "ting_en",
+      "policy": "DIRECT",
+      "source": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list"
+    }
+  ],
+  "not_live_tested": [
+    "Shadowrocket import and connection",
+    "iPhone/iPad apps",
+    "Windows TUN",
+    "CS2/5E/Perfect World/Valorant sessions"
+  ]
+}

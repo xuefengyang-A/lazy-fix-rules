@@ -1,0 +1,17 @@
+{
+  "advertising_enabled": true,
+  "exceptions": [],
+  "domestic_direct": [
+    "DOMAIN-SUFFIX,moutai519.com.cn,DIRECT",
+    "DOMAIN-SUFFIX,huya.com,DIRECT",
+    "DOMAIN-SUFFIX,msstatic.com,DIRECT",
+    "DOMAIN-SUFFIX,duowan.com,DIRECT",
+    "DOMAIN-SUFFIX,yystatic.com,DIRECT",
+    "DOMAIN-SUFFIX,pvp.wanmei.com,DIRECT",
+    "DOMAIN-SUFFIX,5eplay.com,DIRECT",
+    "DOMAIN-SUFFIX,val.qq.com,DIRECT"
+  ],
+  "windows_process_direct": [
+    "cs2.exe"
+  ]
+}
