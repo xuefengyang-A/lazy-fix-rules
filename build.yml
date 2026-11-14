@@ -1,0 +1,202 @@
+name: Build and publish rules
+
+"on":
+  push:
+    branches: [main]
+    paths:
+      - build.rb
+      - rules.rb
+      - validate.rb
+      - rules_test.rb
+      - build_test.rb
+      - overrides.json
+      - .github/workflows/build.yml
+      - README.md
+      - THIRD_PARTY_NOTICES.md
+      - Johnshall-CC-BY-SA-4.0.txt
+      - blackmatrix7-GPL-2.0.txt
+  schedule:
+    # UTC 00:30 = Asia/Taipei 08:30. GitHub scheduling can be delayed.
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rules-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - name: Check out source
+        # Verified official actions/checkout v4.2.2 commit.
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Test and build with existing runner tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          ruby --version
+          curl --version
+          git --version
+          ruby -c build.rb
+          ruby -e 'Dir["*_test.rb"].sort.each { |p| require File.expand_path(p) }'
+          ruby build.rb --output dist
+
+      - name: Verify and stage the public allowlist
+        shell: bash
+        run: |
+          set -euo pipefail
+          ruby <<'RUBY'
+          require 'json'
+          require 'yaml'
+          require 'digest'
+          require 'fileutils'
+          require 'pathname'
+          require 'uri'
+          root = File.expand_path('dist')
+          target = File.join(ENV.fetch('RUNNER_TEMP'), 'lazy-fix-publication')
+          raise 'Publication staging already exists' if File.exist?(target)
+          fixed = %w[lazy-fix.cfg lazy-fix.conf lazy-fix.yaml manifest.json validation.json overrides.json]
+          source_pattern = /\Asources\/[0-9a-f]{16}-[A-Za-z0-9_.-]+\.(?:conf|list|txt)\z/
+          build_only = %w[data/Country.mmdb data/ASN.mmdb mihomo-check.txt]
+          files = Dir.glob(File.join(root, '**', '*'), File::FNM_DOTMATCH).reject { |p| %w[. ..].include?(File.basename(p)) }
+          files.each do |path|
+            raise 'Symlink in build output' if File.symlink?(path)
+            relative = Pathname.new(path).relative_path_from(Pathname.new(root)).to_s
+            if File.directory?(path)
+              raise "Unexpected output directory: #{relative}" unless %w[sources data].include?(relative)
+            else
+              raise "Unexpected output file: #{relative}" unless File.file?(path) && (fixed.include?(relative) || relative.match?(source_pattern) || build_only.include?(relative))
+            end
+          end
+          fixed.each { |name| raise "Missing #{name}" unless File.file?(File.join(root, name)) }
+          manifest = JSON.parse(File.read(File.join(root, 'manifest.json')))
+          validation = JSON.parse(File.read(File.join(root, 'validation.json')))
+          raise 'Unrecognized artifact' unless manifest['artifact'] == 'lazy-fix-public'
+          raise 'Offline validation failed' unless validation['passed'] == true
+          raise 'Batch mismatch' unless manifest['batch'].is_a?(String) && manifest['batch'] == validation['batch']
+          raise 'Alias validation failed' unless validation['shadowrocket_extension_alias_identical'] == true
+          raise 'Alias declaration mismatch' unless manifest['aliases'] == { 'lazy-fix.conf' => 'lazy-fix.cfg' }
+          raise 'Shadowrocket aliases differ' unless File.binread(File.join(root, 'lazy-fix.conf')) == File.binread(File.join(root, 'lazy-fix.cfg'))
+          expected_outputs = %w[lazy-fix.cfg lazy-fix.conf lazy-fix.yaml overrides.json]
+          raise 'Unexpected manifest outputs' unless manifest.fetch('outputs').keys.sort == expected_outputs.sort
+          manifest.fetch('outputs').each do |name, sha|
+            raise "Hash mismatch: #{name}" unless Digest::SHA256.file(File.join(root, name)).hexdigest == sha
+          end
+          listed_sources = manifest.fetch('sources').map do |entry|
+            name = entry.fetch('file')
+            raise 'Invalid source path' unless name.match?(source_pattern)
+            url = URI(entry.fetch('url'))
+            raise 'Source URL must be public HTTPS without credentials' unless url.is_a?(URI::HTTPS) && url.userinfo.nil? && url.query.nil? && url.fragment.nil?
+            path = File.join(root, name)
+            raise 'Source checksum mismatch' unless File.size(path) == entry.fetch('bytes') && Digest::SHA256.file(path).hexdigest == entry.fetch('sha256')
+            name
+          end
+          raise 'No captured rule sources' if listed_sources.empty?
+          actual_sources = files.select { |p| File.file?(p) }.map { |p| Pathname.new(p).relative_path_from(Pathname.new(root)).to_s }.grep(source_pattern)
+          raise 'Unlisted or duplicate sources' unless listed_sources.uniq.size == listed_sources.size && actual_sources.sort == listed_sources.sort
+          yaml_text = File.read(File.join(root, 'lazy-fix.yaml'))
+          yaml = if YAML.method(:safe_load).parameters.any? { |kind, name| [:key, :keyreq].include?(kind) && name == :permitted_classes }
+            YAML.safe_load(yaml_text, permitted_classes: [], permitted_symbols: [], aliases: true)
+          else
+            YAML.safe_load(yaml_text, [], [], true)
+          end
+          raise 'Nodes/providers must remain private' if yaml.key?('proxies') || yaml.key?('proxy-providers')
+          expected_group = [{ 'name' => 'PROXY', 'type' => 'select', 'proxies' => ['REJECT'] }]
+          raise 'Unsafe public proxy group' unless yaml['proxy-groups'] == expected_group
+          raise 'Private controller settings' unless (yaml.keys & %w[secret authentication external-controller external-controller-tls]).empty?
+          cfg = File.read(File.join(root, 'lazy-fix.cfg'))
+          %w[Proxy Proxy\ Group].each do |section|
+            body = cfg[/^\[#{Regexp.escape(section)}\]\s*\n(.*?)(?=^\[|\z)/m, 1]
+            raise "Missing #{section} section" unless body
+            active = body.lines.map(&:strip).reject { |line| line.empty? || line.start_with?('#', ';', '//') }
+            raise 'Shadowrocket nodes/groups must remain private' unless active.empty?
+          end
+          publish = fixed + listed_sources
+          publish.each do |name|
+            text = File.binread(File.join(root, name)).force_encoding('UTF-8')
+            raise "Invalid UTF-8: #{name}" unless text.valid_encoding?
+            raise "Local path found: #{name}" if text.match?(%r{/Users/|/home/(?:runner|[A-Za-z0-9_.-]+)/|[A-Za-z]:[\\/]Users[\\/]})
+            raise "Node link found: #{name}" if text.match?(%r{(?:vless|vmess|trojan|ssr?|hysteria2?|tuic)://}i)
+            raise "Private material found: #{name}" if text.match?(/-----BEGIN (?:[A-Z ]*PRIVATE KEY|CERTIFICATE)-----/) || text.match?(/^\s*(?:uuid|password|private-key|ca-p12|ca-passphrase)\s*[:=]\s*\S+/i)
+          end
+          docs = %w[README.md THIRD_PARTY_NOTICES.md Johnshall-CC-BY-SA-4.0.txt blackmatrix7-GPL-2.0.txt]
+          FileUtils.mkdir_p(target)
+          publish.each do |name|
+            FileUtils.mkdir_p(File.dirname(File.join(target, name)))
+            FileUtils.cp(File.join(root, name), File.join(target, name))
+          end
+          docs.each do |name|
+            raise 'Missing or symlinked notice' unless File.file?(name) && !File.symlink?(name)
+            FileUtils.mkdir_p(File.dirname(File.join(target, name)))
+            FileUtils.cp(name, File.join(target, name))
+          end
+          # GitHub Pages must serve the verified files without Jekyll processing.
+          File.write(File.join(target, '.nojekyll'), '')
+          puts "Staged #{publish.size} verified artifacts and #{docs.size} notices. MMDB files are excluded."
+          RUBY
+
+      - name: Upload the verified Pages artifact
+        # Verified official actions/upload-pages-artifact v4 commit.
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
+        with:
+          path: ${{ runner.temp }}/lazy-fix-publication
+          retention-days: 1
+
+      - name: Publish one atomic branch update
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/lazy-fix-publication"
+          git init --quiet
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          auth_header="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          printf '::add-mask::%s\n' "$auth_header"
+          export GIT_CONFIG_COUNT=1
+          export GIT_CONFIG_KEY_0=http.https://github.com/.extraheader
+          export GIT_CONFIG_VALUE_0="$auth_header"
+          remote_ref="$(git ls-remote --heads origin refs/heads/gh-pages)"
+          parents=()
+          if [[ -n "$remote_ref" ]]; then
+            git fetch --quiet --depth=1 origin refs/heads/gh-pages
+            parents=(-p "$(git rev-parse FETCH_HEAD)")
+          fi
+          git add --all
+          tree="$(git write-tree)"
+          commit="$(printf 'Publish paired rules from %s\n' "$SOURCE_SHA" | git commit-tree "$tree" "${parents[@]}")"
+          # One ref update publishes both formats together. A competing update fails safely.
+          git push origin "${commit}:refs/heads/gh-pages"
+          unset GH_TOKEN auth_header GIT_CONFIG_VALUE_0
+
+  deploy:
+    needs: publish
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the same verified artifact to Pages
+        id: deployment
+        # Verified official actions/deploy-pages v4 commit.
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e

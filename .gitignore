@@ -1,0 +1,22 @@
+# Generated snapshots belong on gh-pages, never on the source branch.
+/dist/
+/.lazy-fix-build-*/
+/dist.previous-*/
+/.publication-check/
+/.publish/
+
+# Device-local credentials and merge files must stay private.
+/private/
+/local/
+.env
+.env.*
+*private*merge*.yaml
+*private*merge*.yml
+*node*merge*.yaml
+*node*merge*.yml
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.DS_Store
