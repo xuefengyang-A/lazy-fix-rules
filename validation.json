@@ -604,8 +604,8 @@
     }
   ],
   "rule_counts": {
-    "shadowrocket": 99863,
-    "mihomo": 99734
+    "shadowrocket": 100264,
+    "mihomo": 100135
   },
   "ignored_shadowrocket_types": [
     "USER-AGENT",
@@ -628,7 +628,7 @@
     "passed": null,
     "reason": "MIHOMO_BIN was not supplied; independent output parsing and routing fixtures only. No core syntax check was performed."
   },
-  "batch": "20261117T081334Z-ef4495",
+  "batch": "20261118T074724Z-b0877c",
   "shadowrocket_extension_alias_identical": true,
   "shadowrocket_non_rule_sections_preserved": true,
   "windows_only_processes": [
