@@ -1,7 +1,7 @@
 {
   "artifact": "lazy-fix-public",
-  "batch": "20261122T071143Z-86701e",
-  "generated_at": "2026-11-22T07:11:51Z",
+  "batch": "20261123T075702Z-827b50",
+  "generated_at": "2026-11-23T07:57:09Z",
   "source_mode": "downloaded",
   "source_snapshot_batch": null,
   "generator_sha256": {
@@ -16,9 +16,9 @@
       "url": "https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf",
       "retrieval_url": "https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf",
       "file": "sources/6854e02990cdb67c-sr_ad_only.conf",
-      "sha256": "597f6faa8ed67e2f6f44c7d33b47b8b0534018dacb9a02de8f8aa026abc3f70a",
-      "bytes": 2133472,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "sha256": "804edae9c9674b280d833cc1f987aeeb286493a063b5f832f4137caa28690065",
+      "bytes": 2148257,
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -27,7 +27,7 @@
       "file": "sources/3c348d404b61f7f8-lazy.conf",
       "sha256": "d2ba9325213aed89debefd3920394b3346cb58a03900a72a81f7a4e5198066c1",
       "bytes": 24592,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -36,7 +36,7 @@
       "file": "sources/927dc0aac9178cb3-Apple.list",
       "sha256": "966cb314803464ea516243104ed97aaa695d44da71f46b4c72bf8a14e7c67931",
       "bytes": 67255,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -45,7 +45,7 @@
       "file": "sources/b17a7b844a89c0a1-China.list",
       "sha256": "d1db36ac45b3615ee989cc2294e49559cf7d2c7e9826b00d716bc2cb436c09e1",
       "bytes": 115682,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -54,7 +54,7 @@
       "file": "sources/49fb139856175b79-Global.list",
       "sha256": "2e0c2759997a0968ccf08e3714de0f376f98adf55ca87e696399f913592f960a",
       "bytes": 1217474,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -63,7 +63,7 @@
       "file": "sources/b13e9db20545b0eb-WeChat.list",
       "sha256": "f2b1097292162858845d3b4f99058f047e0715bef4a0e6202b40a10af5c38e2c",
       "bytes": 1556,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -72,7 +72,7 @@
       "file": "sources/4ed683f3509d2330-Amazon.list",
       "sha256": "83e604479e651e17734e965425969d475732463e3d3c942f22afa159532f27d4",
       "bytes": 6481,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -81,7 +81,7 @@
       "file": "sources/d3b8f3311e61c7e7-Baidu.list",
       "sha256": "ac49361bba37ccd12f46dff78885ef07218d9dc9deb254d71d1c0431a7eb921a",
       "bytes": 6981,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -90,7 +90,7 @@
       "file": "sources/5972ac26e9f69d6a-BiliBili.list",
       "sha256": "9b22a7bdf97792346bf480771841b6cd1097ec7ad034b34528c14f3798107854",
       "bytes": 4523,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -99,7 +99,7 @@
       "file": "sources/a1ba081326e834d7-Disney.list",
       "sha256": "65ededc7b608e440f3d918f6e95b19ca52460c8fe368dbd9e840b4bc8669f753",
       "bytes": 5565,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -108,7 +108,7 @@
       "file": "sources/e39396d7d36e37f6-DouBan.list",
       "sha256": "49b368896f4e38f4a31ac911b8e13fee923575884afe0d27a3cb1a0735551742",
       "bytes": 231,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -117,7 +117,7 @@
       "file": "sources/00d16633eb63fff8-DouYin.list",
       "sha256": "020e742fe4a7084268af6aa52c4153bf5bfd54c4d7a17466f42cd3461609e32a",
       "bytes": 533,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -126,7 +126,7 @@
       "file": "sources/b6d32e12333743b5-Epic.list",
       "sha256": "8f5fcadadd967023aa81273803de80beb2ceadd9af4e9352b565b3b00ccf464d",
       "bytes": 588,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -135,7 +135,7 @@
       "file": "sources/828e4cc7011bafd9-Facebook.list",
       "sha256": "747563c96825bbd5f868be955543b0ca1979064e7b094f8aab08aafbce577c36",
       "bytes": 17399,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -144,7 +144,7 @@
       "file": "sources/d88e4b87f18a5182-Game.list",
       "sha256": "63ed1092c588beb377cad51b574c921ca113a880752b6c0b8c96b9ecc7f13366",
       "bytes": 19725,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -153,7 +153,7 @@
       "file": "sources/92a3ee8c827a17e2-GitHub.list",
       "sha256": "ced8ab0ecda5775d04ec8ee6a57b282181108565331a6a1d85e9a26fee25d79b",
       "bytes": 1117,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -162,7 +162,7 @@
       "file": "sources/58206428554c7540-Google.list",
       "sha256": "c6efe08ab4c0a12ddba20f5e75abfba2dd63a42b810f8cb5c303433a38e93b73",
       "bytes": 19777,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -171,7 +171,7 @@
       "file": "sources/24686b42719191c9-HBO.list",
       "sha256": "f89c50e9a1f433dc1acb8a75aa2cab27d4e2fd82f4fed6ba2820ce9b923680e2",
       "bytes": 1738,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -180,7 +180,7 @@
       "file": "sources/e3b69cd215b21560-Lan.list",
       "sha256": "79c3b96f8064bf1b53678fb0dc7d9e92d74c729869fe8dc494afa2e9b12e2856",
       "bytes": 4843,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -189,7 +189,7 @@
       "file": "sources/5d4d33b7bd69e939-Microsoft.list",
       "sha256": "22df1a1017ad5d41755bf020ca8eb9afeedc7bdc2c649ed2074b255227a7ed8e",
       "bytes": 20536,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -198,7 +198,7 @@
       "file": "sources/5768df2ae8986dd9-NetEaseMusic.list",
       "sha256": "da8638a8414224a63dd29d7b45446956ed98c67f88d3b530c80b6c978191fc09",
       "bytes": 1238,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -207,7 +207,7 @@
       "file": "sources/79c47f33d22d92b9-Netflix.list",
       "sha256": "ec37f90727e7db062d754487c4bed68ae8bba28f349aef0995f10c06f5e8b231",
       "bytes": 40351,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -216,7 +216,7 @@
       "file": "sources/feda045906a71530-Nintendo.list",
       "sha256": "ca3cf3ea5051ed220c255fbccbdd93e477f1c558e26ada6bf3dbcc2ba0487da2",
       "bytes": 4120,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -225,7 +225,7 @@
       "file": "sources/659ed5bea73acd31-PayPal.list",
       "sha256": "4ffb6f94d2f1eff835c24b533c3d1d6e0c5a4cfbc32740fa9c32315ae218fd18",
       "bytes": 7859,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -234,7 +234,7 @@
       "file": "sources/2f9764f95c724f85-Sina.list",
       "sha256": "223182b8b06af7838174f94839e1e799b39a9e283b66b0e1a71108539d7c2829",
       "bytes": 2994,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -243,7 +243,7 @@
       "file": "sources/28e5fdf826615c51-Sony.list",
       "sha256": "c3c96668d832b2b4e94ab185c14e2931d6af99d5a106bb658b0d83160fc9a19f",
       "bytes": 3309,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -252,7 +252,7 @@
       "file": "sources/ebc04aa1ff22792e-Spotify.list",
       "sha256": "577afc9442a38c578e0aa8769b192d2f935e808114c60cbd5afd2294c79b74d0",
       "bytes": 1197,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -261,7 +261,7 @@
       "file": "sources/be029b4e440cac6f-Steam.list",
       "sha256": "290ebccc4be56defc7d36f85d8c9777101548a4f2147ca29fe50b794c6a8dec7",
       "bytes": 2571,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -270,7 +270,7 @@
       "file": "sources/fd1225ddd9c3dc58-SteamCN.list",
       "sha256": "82c144434e9199c524d95caa8e3659c9f6f1de9fd23b223a58b5d3c821923936",
       "bytes": 662,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -279,7 +279,7 @@
       "file": "sources/510d458b239cc0e6-Telegram.list",
       "sha256": "09f093cce5b3e2994147a2640e03040aac75e1db7bf2103fd1c9a2509b0176ab",
       "bytes": 1338,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -288,7 +288,7 @@
       "file": "sources/f25d140811b9df06-TikTok.list",
       "sha256": "94262918311e66c8a3bcf5a65173ff0c4e1ceaa29e24644acafadc127121a295",
       "bytes": 1186,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -297,7 +297,7 @@
       "file": "sources/9c73f0d1ee3d74d3-Twitter.list",
       "sha256": "64c836f2431ca0d4728cc545bb74280ee50c886e346040012e6cdd2f3eee3f97",
       "bytes": 1116,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -306,7 +306,7 @@
       "file": "sources/95e7b3384345b485-XiaoHongShu.list",
       "sha256": "9fb20e80dc0962cfdf410ffbd72d6bf2a6a0ac0d930951880f98164ff229e8ff",
       "bytes": 272,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -315,7 +315,7 @@
       "file": "sources/f1b976862bdab425-YouTube.list",
       "sha256": "f764cd91a779982225b3553ece8033c86a6545f4990f5fefd356805de962aee9",
       "bytes": 5436,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -324,7 +324,7 @@
       "file": "sources/c4e5092f1687ff74-Zhihu.list",
       "sha256": "450c53b3762b1aa2f63631f8d07c7237338c8c691aeb475ed07583cfea9d5e33",
       "bytes": 423,
-      "captured_at": "2026-11-22T07:11:44Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     },
     {
@@ -333,7 +333,7 @@
       "file": "sources/a9fb8286d41e5320-AI.txt",
       "sha256": "1f940f4199901c7b660d42861a362db6b3bcbf897172114ec9a208cc205f5db4",
       "bytes": 2530,
-      "captured_at": "2026-11-22T07:11:43Z",
+      "captured_at": "2026-11-23T07:57:02Z",
       "acquisition": "downloaded"
     }
   ],
@@ -342,7 +342,7 @@
       "file": "data/Country.mmdb",
       "sha256": "9840946762fa8c2673738bbbbab22bb720bde931f6dea327eb58e689babc37dc",
       "bytes": 7630477,
-      "captured_at": "2026-11-22T07:11:51Z",
+      "captured_at": "2026-11-23T07:57:09Z",
       "source": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb",
       "retrieval_url": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb",
       "acquisition": "downloaded"
@@ -351,7 +351,7 @@
       "file": "data/ASN.mmdb",
       "sha256": "ba7c4964c71b51d28dc23eefd5e4376801bf90472d26f766648aae003af9388e",
       "bytes": 9072814,
-      "captured_at": "2026-11-22T07:11:51Z",
+      "captured_at": "2026-11-23T07:57:09Z",
       "source": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb",
       "retrieval_url": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb",
       "acquisition": "downloaded"
@@ -360,16 +360,16 @@
   "counts": {
     "original_rules": 47545,
     "original_ruleset_sources": 34,
-    "advertising_domain_rules": 53831,
+    "advertising_domain_rules": 54197,
     "advertising_ip_rules_excluded": 128,
-    "shadowrocket_rules": 101384,
+    "shadowrocket_rules": 101750,
     "mihomo_unsupported_rules": 131,
     "domestic_supplements": 8
   },
   "outputs": {
-    "lazy-fix.cfg": "20c773a845791f77c6fa680eb88d189e9ff3f080977223f0311935fab073aa84",
-    "lazy-fix.conf": "20c773a845791f77c6fa680eb88d189e9ff3f080977223f0311935fab073aa84",
-    "lazy-fix.yaml": "3f2211151915ed0824c5381bb8227afd09d90a7331f3868b9cc82c26afcdc709",
+    "lazy-fix.cfg": "a7875e211052b4b194a234a4ad3f972678b9e240387e41bb6dc5f503b3b3e1a3",
+    "lazy-fix.conf": "a7875e211052b4b194a234a4ad3f972678b9e240387e41bb6dc5f503b3b3e1a3",
+    "lazy-fix.yaml": "07e5cf13c4f15a6a8d3c3244119b1d3f8242118a87fb2d4fa31dc9a4c6064ce3",
     "overrides.json": "e980c877f17f216b84065d33c73fd847fc27b15132d0cee9a9a7d2b4ab5a7b3c"
   },
   "aliases": {
